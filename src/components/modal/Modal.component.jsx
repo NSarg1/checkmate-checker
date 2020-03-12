@@ -24,7 +24,7 @@ const modal = props => {
                 return (
                     <div className={cssClasses.join(' ')}>
                         <h1 className="mate-checker__status">{mateStatus}</h1>
-                        <Button className="btn" onClick={closeModal}>
+                        <Button className="ns-btn--black" onClick={closeModal}>
                             Reset positions
                         </Button>
                     </div>

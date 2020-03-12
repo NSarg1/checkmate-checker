@@ -252,7 +252,7 @@ export class Figures {
 				if (posMinus1 >= 0) {
 					if (
 						this.isNotBlocking(i, posMinus1, selfPosition) &&
-						!whiteList.includes(this.state[i][pos])
+						whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posMinus1] = this.attackZone;
 					}
@@ -260,7 +260,7 @@ export class Figures {
 				if (posPlus1 <= 7) {
 					if (
 						this.isNotBlocking(i, posPlus1, selfPosition) &&
-						!whiteList.includes(this.state[i][pos])
+						whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posPlus1] = this.attackZone;
 					}
@@ -270,7 +270,7 @@ export class Figures {
 				if (posMinus2 >= 0) {
 					if (
 						this.isNotBlocking(i, posMinus2, selfPosition) &&
-						!whiteList.includes(this.state[i][pos])
+						whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posMinus2] = this.attackZone;
 					}
@@ -278,7 +278,7 @@ export class Figures {
 				if (posPlus2 <= 7) {
 					if (
 						this.isNotBlocking(i, posPlus2, selfPosition) &&
-						!whiteList.includes(this.state[i][pos])
+						whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posPlus2] = this.attackZone;
 					}

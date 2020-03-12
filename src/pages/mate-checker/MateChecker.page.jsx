@@ -133,13 +133,12 @@ const MateChecker = () => {
                         setFigures={setFigures}
                         figuresProtected={figuresProtected}
                     />
-                    <div>
-                        <div className="mate-checker__control-btns">
-                            <Button onClick={submitAll}>Submit</Button>
-                        </div>
 
-                        <Modal show={isSubmited} mateStatus={mateStatus} closeModal={reset} />
+                    <div className="mate-checker__control-btns">
+                        <Button className='ns-btn--submit' onClick={submitAll}>Submit</Button>
                     </div>
+
+                    <Modal show={isSubmited} mateStatus={mateStatus} closeModal={reset} />
                 </div>
             </div>
         </div>
