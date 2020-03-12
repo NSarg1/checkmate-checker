@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b5afd940f4543d92b974e55e5a280b13",
+    "revision": "798486fbf6933a1a310c083fcc5daeb5",
     "url": "/checkmate-checker/index.html"
   },
   {
