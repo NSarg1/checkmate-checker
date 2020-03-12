@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mate-checker/static/css/main.df083a90.chunk.css",
+    "main.js": "/mate-checker/static/js/main.9c986212.chunk.js",
+    "main.js.map": "/mate-checker/static/js/main.9c986212.chunk.js.map",
+    "runtime-main.js": "/mate-checker/static/js/runtime-main.1bb9adab.js",
+    "runtime-main.js.map": "/mate-checker/static/js/runtime-main.1bb9adab.js.map",
+    "static/js/2.8fc772b7.chunk.js": "/mate-checker/static/js/2.8fc772b7.chunk.js",
+    "static/js/2.8fc772b7.chunk.js.map": "/mate-checker/static/js/2.8fc772b7.chunk.js.map",
+    "index.html": "/mate-checker/index.html",
+    "precache-manifest.9330d3e0ee5b88a274f3ce456883ea5f.js": "/mate-checker/precache-manifest.9330d3e0ee5b88a274f3ce456883ea5f.js",
+    "service-worker.js": "/mate-checker/service-worker.js",
+    "static/css/main.df083a90.chunk.css.map": "/mate-checker/static/css/main.df083a90.chunk.css.map",
+    "static/js/2.8fc772b7.chunk.js.LICENSE.txt": "/mate-checker/static/js/2.8fc772b7.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/mate-checker/static/media/queen.90314d48.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1bb9adab.js",
+    "static/js/2.8fc772b7.chunk.js",
+    "static/css/main.df083a90.chunk.css",
+    "static/js/main.9c986212.chunk.js"
+  ]
+}
