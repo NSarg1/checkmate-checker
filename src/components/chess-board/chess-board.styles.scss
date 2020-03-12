@@ -1,28 +1,55 @@
 .chess-board {
-	align-self: center;
-	@include flexColumnCenter;
-	background-image: url(../../assets/figures/board1.jpg);
-	background-size: cover;
-	background-position: center;
-	padding: 2.9rem;
-	border-radius: 5px;
-	
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+    position: relative;
 
-	&__row {
-		display: flex;
-	}
+    &__part-1,
+    &__part-2 {
+        background-size: cover;
+        background-position: center;
+        height: 35rem;
+        width: 70rem;
+        opacity: 0;
+    }
 
-	&__cell {
-		cursor: pointer;
-		position: relative;
-		transition: 0.2s;
-		height: 8rem;
-		width: 8rem;
-		border-radius: 15%;
+    &__part-1 {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        background-image: url(../../assets/figures/board/part-1.png);
+        animation: slideToBottom 2s ease 0.5s forwards;
+    }
+    &__part-2 {
+        background-image: url(../../assets/figures/board/part-2.png);
+        animation: slideToTop 2s ease 0.5s forwards;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
 
-		&-figure {
-			@include absoluteCenter;
-			top: 0;
-		}
-	}
+    &__cell-container {
+        @include flexColumnCenter;
+        position: absolute;
+        top: 2.8rem;
+        left: 2.8rem;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__cell {
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+        height: 7.85rem;
+        width: 7.85rem;
+        border-radius: 15%;
+        margin: 0.1rem;
+
+        &-figure {
+            @include absoluteCenter;
+            top: 0;
+            opacity: 1 !important;
+        }
+    }
 }

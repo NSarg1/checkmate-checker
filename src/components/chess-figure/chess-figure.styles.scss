@@ -1,0 +1,23 @@
+.chess-figure {
+    cursor: pointer;
+    justify-self: center;
+    height: 11rem;
+    width: 6.5rem;
+    transition: 0.2s linear;
+
+    &--10 {
+        background-image: url(../../assets/figures/king-white.png);
+    }
+    &--20 {
+        background-image: url(../../assets/figures/queen.png);
+    }
+    &--30 {
+        background-image: url(../../assets/figures/horse.png);
+    }
+    &--40 {
+        background-image: url(../../assets/figures/elph.png);
+    }
+    &--50 {
+        background-image: url(../../assets/figures/king-black.png);
+    }
+}

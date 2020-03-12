@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Transition from 'react-transition-group/Transition';
-import Button from '../button/Button.copmponent'
+import Button from '../button/Button.copmponent';
 
 const animationTiming = {
-    enter: 500,
+    enter: 700,
     exit: 500,
 };
 
@@ -20,13 +20,14 @@ const modal = props => {
                     state === 'entering' ? 'modal--open' : state === 'exiting' ? 'modal--closed' : null,
                 ];
 
-                console.log(state);
                 return (
                     <div className={cssClasses.join(' ')}>
                         <h1 className="mate-checker__status">{mateStatus}</h1>
-                        <Button className="ns-btn--black" onClick={closeModal}>
-                            Reset positions
-                        </Button>
+                        <div>
+                            <Button className="ns-btn--black" onClick={closeModal}>
+                                Reset positions
+                            </Button>
+                        </div>
                     </div>
                 );
             }}

@@ -16,7 +16,7 @@ const MateChecker = () => {
      *king = 50;*/
 
     const initialState = Array(8).fill(Array(8).fill(0));
-    const initialPositions = { 10: null, 20: null, 30: null, 40: null, 50: null };
+    const initialPositions = { 10: undefined, 20: undefined, 30: undefined, 40: undefined, 50: undefined };
     const initialProtected = { 10: false, 20: false, 30: false, 40: false, 50: false };
 
     const [state, setState] = useState(initialState);
@@ -112,31 +112,36 @@ const MateChecker = () => {
         <div className="mate-checker">
             <div className="mate-checker__main">
                 <div className="mate-checker__container">
-                    <div className="mate-checker__figures">
-                        {Object.keys(figuresPositions).map(elm => {
-                            return !figuresPositions[elm] ? (
-                                <ChessFigure
-                                    activeFigure={activeFigure}
-                                    selectActiveFigure={selectActiveFigure}
-                                    figuresPositions={figuresPositions}
-                                    key={elm}
-                                    elm={+elm}
-                                />
-                            ) : (
-                                <div key={elm}></div>
-                            );
-                        })}
+                    <div className="mate-checker__left-side">
+                        <div className="mate-checker__btn">
+                            <Button className="ns-btn--black" onClick={submitAll}>
+                                Submit
+                            </Button>
+                        </div>
+                        
+                        <div className="mate-checker__figures">
+                            {Object.keys(figuresPositions).map(elm => {
+                                return !figuresPositions[elm] ? (
+                                    <ChessFigure
+                                        activeFigure={activeFigure}
+                                        selectActiveFigure={selectActiveFigure}
+                                        figuresPositions={figuresPositions}
+                                        key={elm}
+                                        elm={+elm}
+                                    />
+                                ) : (
+                                    <div key={elm}></div>
+                                );
+                            })}
+                        </div>
                     </div>
+
                     <ChessBoard
                         state={state}
                         activeFigure={activeFigure}
                         setFigures={setFigures}
                         figuresProtected={figuresProtected}
                     />
-
-                    <div className="mate-checker__control-btns">
-                        <Button className='ns-btn--submit' onClick={submitAll}>Submit</Button>
-                    </div>
 
                     <Modal show={isSubmited} mateStatus={mateStatus} closeModal={reset} />
                 </div>

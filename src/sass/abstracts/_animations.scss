@@ -1,41 +1,88 @@
+@keyframes dynamicAppearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 @keyframes openModal {
-	0% {
-		 opacity: 0;
-		 transform: translateY(-100%);
-	}
-	50% {
-		 opacity: 1;
-		 transform: translateY(90%);
-	}
-	100% {
-		 opacity: 1;
-		 transform: translateY(0);
-	}
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes closeModal {
-	0% {
-		 opacity: 1;
-		 transform: translateY(0);
-	}
-	50% {
-		 opacity: 0.8;
-		 transform: translateY(60%);
-	}
-	100% {
-		 opacity: 0;
-		 transform: translateY(-100%);
-	}
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
 }
-
-
 
 @keyframes scaleIn {
-	0% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(1.3);
-	}
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
 }
 
+@keyframes slideToBottom {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideToTop {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
