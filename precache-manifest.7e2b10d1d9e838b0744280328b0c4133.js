@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de1f7d11696e08bbe822dc876dd4b455",
+    "revision": "d5b3aa17a1a7757909424ad688d3d0aa",
     "url": "/checkmate-checker/index.html"
   },
   {
-    "revision": "863b228cd6bbbd5ef693",
-    "url": "/checkmate-checker/static/css/main.8b888a44.chunk.css"
+    "revision": "623276ae19c203297fcf",
+    "url": "/checkmate-checker/static/css/main.49b48faa.chunk.css"
   },
   {
     "revision": "4c901bb3a04f68dccbd1",
@@ -16,20 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/checkmate-checker/static/js/2.5aec4185.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "863b228cd6bbbd5ef693",
-    "url": "/checkmate-checker/static/js/main.3ecbe2e3.chunk.js"
+    "revision": "623276ae19c203297fcf",
+    "url": "/checkmate-checker/static/js/main.6e905034.chunk.js"
   },
   {
     "revision": "174ced159c0072d0c990",
     "url": "/checkmate-checker/static/js/runtime-main.4bc3de55.js"
   },
   {
-    "revision": "749c04188323133e511b5ce6ed5ad40b",
-    "url": "/checkmate-checker/static/media/back.749c0418.jpg"
+    "revision": "b4fcdad16c602cc6c77b67f501c9b5aa",
+    "url": "/checkmate-checker/static/media/back-min.b4fcdad1.jpg"
   },
   {
-    "revision": "873d60b5bf81da806feccfe751c6c5c6",
-    "url": "/checkmate-checker/static/media/board1.873d60b5.png"
+    "revision": "8aaa2f636119f8fb6430beaec29e9c95",
+    "url": "/checkmate-checker/static/media/board1.8aaa2f63.jpg"
   },
   {
     "revision": "5dc03ca6df9b31884553864da2a8a6c7",
