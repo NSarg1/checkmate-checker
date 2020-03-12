@@ -1,0 +1,28 @@
+.chess-board {
+	align-self: center;
+	@include flexColumnCenter;
+	background-image: url(../../assets/figures/board1.png);
+	background-size: cover;
+	background-position: center;
+	padding: 2.9rem;
+	border-radius: 5px;
+	
+
+	&__row {
+		display: flex;
+	}
+
+	&__cell {
+		cursor: pointer;
+		position: relative;
+		transition: 0.2s;
+		height: 8rem;
+		width: 8rem;
+		border-radius: 15%;
+
+		&-figure {
+			@include absoluteCenter;
+			top: 0;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+// Number input type's arrows disappeared
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+input,
+textarea,
+select,
+.select,
+.file-input,
+button {
+	font-family: "Roboto", sans-serif;
+	outline: none !important;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.602);
+	resize: none;
+	font-size: $font-size-body;
+}
+
+input,
+textarea,
+.select,
+.file-input {
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	border-radius: $border-radius-5;
+}
+
+button {
+	padding: 1rem 2rem;
+	border: 1px solid;
+	cursor: pointer;
+	margin: 1rem 2rem;
+}
+
+/**--------------- BOOTSTRAP CUSTOM STYLES --------------**/
+
+.btn {
+	box-shadow: none !important;
+	font-size: 1.6rem;
+	padding: 1rem 2rem;
+	min-width: 15rem;
+
+	@include respond(600) {
+		min-width: 10rem;
+		&-outline-dark:hover {
+			background-color: initial;
+			color: initial;
+		}
+	}
+}
+
+.spinner-grow {
+	width: 4rem;
+	height: 4rem;
+	color: #fda085;
+}
+
+.form-control {
+	font-size: $font-size-body;
+}
+
+button:focus {
+	box-shadow: none !important;
+}
+/**---------------BOOTSTRAP RESET--------------**/
+
+.modal {
+	z-index: 2000 !important;
+}

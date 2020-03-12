@@ -1,0 +1,16 @@
+.ns-btn {
+    &,
+    &:link,
+    &:visited {
+        padding: 1rem 1.5rem;
+        box-shadow: $box-shadow-input;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.1s;
+	}
+	
+
+	
+}

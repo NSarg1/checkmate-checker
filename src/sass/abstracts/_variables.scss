@@ -1,0 +1,35 @@
+// BODY VARIABLES
+
+$font-size-body: 1.6rem;
+$line-height-body: $font-size-body * 1.1;
+
+// h1
+$font-size-h1: 5.5rem;
+$line-height-h1: $font-size-h1 * 1.25;
+
+$border-radius-3: 3px;
+$border-radius-5: 5px;
+
+$box-shadow-input: 0 0 5px 2px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-box: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+
+$box-shadow-button: 0 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+$box-shadow-button--active: 0 0.15rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+
+// HEADER
+$transition-time-header: 1s;
+
+// COLORS
+
+$color-gradient-1: linear-gradient(140deg, #ffbb01, #f37335);
+$color-gradient-2: linear-gradient(
+	89deg,
+	rgba(253, 220, 155, 1) 26.2%,
+	rgba(255, 215, 165, 1) 48.5%
+);
+$color-gradient-3: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+
+$color-edit-main: #3b5998;
+$color-edit-hover: #324b80;
+$color-remove-main: #de5246;
+$color-remove-hover: #d93729;

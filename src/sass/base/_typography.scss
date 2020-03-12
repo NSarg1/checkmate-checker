@@ -1,0 +1,51 @@
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	text-align: center;
+	user-select: none;
+}
+
+h1 {
+	font-size: $font-size-h1;
+	line-height: $line-height-h1;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	// margin: 0 auto 1rem auto;
+	@include colorGradient($color-gradient-1);
+}
+
+h2 {
+	font-size: 3.5rem;
+	margin: 2rem 0;
+}
+
+h3 {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+p {
+	text-align: justify;
+}
+
+label {
+	font-weight: 500;
+	margin: 0;
+}
+
+.title {
+	@include flexColumnCenter;
+	width: 100%;
+	&::after {
+		content: "";
+		display: block;
+		height: 0.2rem;
+		width: 20%;
+		margin: 2rem auto;
+	}
+}
+
+label {
+	user-select: none;
+}

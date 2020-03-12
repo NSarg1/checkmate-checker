@@ -1,0 +1,22 @@
+//RESET
+@import './sass/reset';
+//ABSTRACTS
+@import './sass/abstracts/variables';
+@import './sass/abstracts/mixins';
+@import './sass/abstracts/animations';
+//BASE
+@import './sass/base/base';
+@import './sass/base/reset';
+@import './sass/base/typography';
+@import './sass/base/utilities';
+
+@import './App/App.scss';
+
+//Pages
+@import './pages/mate-checker/mate-checker.styles';
+
+//COMPONENTS
+@import './components/chess-board/chess-board.styles';
+@import './components/chess-figure/chess-figure.styles.css';
+@import './components/modal/modal.styles.scss';
+@import './components/button/button.styles.scss';
