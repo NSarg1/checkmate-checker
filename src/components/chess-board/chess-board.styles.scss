@@ -1,7 +1,7 @@
 .chess-board {
 	align-self: center;
 	@include flexColumnCenter;
-	background-image: url(../../assets/figures/board1.png);
+	background-image: url(../../assets/figures/board1.jpg);
 	background-size: cover;
 	background-position: center;
 	padding: 2.9rem;

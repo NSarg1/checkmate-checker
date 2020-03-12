@@ -162,7 +162,7 @@ export class Figures {
 		}
 	}
 
-	elphZone() {
+	bishopZone() {
 		let selfPosition = this.bishop;
 		const [rowNum, pos] = this.positions[selfPosition];
 		const magicNum = rowNum + pos;
@@ -252,15 +252,15 @@ export class Figures {
 				if (posMinus1 >= 0) {
 					if (
 						this.isNotBlocking(i, posMinus1, selfPosition) &&
-						whiteList.includes(this.state[i][pos])
+						!whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posMinus1] = this.attackZone;
 					}
 				}
-				if (posPlus1 < 7) {
+				if (posPlus1 <= 7) {
 					if (
 						this.isNotBlocking(i, posPlus1, selfPosition) &&
-						whiteList.includes(this.state[i][pos])
+						!whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posPlus1] = this.attackZone;
 					}
@@ -270,15 +270,15 @@ export class Figures {
 				if (posMinus2 >= 0) {
 					if (
 						this.isNotBlocking(i, posMinus2, selfPosition) &&
-						whiteList.includes(this.state[i][pos])
+						!whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posMinus2] = this.attackZone;
 					}
 				}
-				if (posPlus2 < 7) {
+				if (posPlus2 <= 7) {
 					if (
 						this.isNotBlocking(i, posPlus2, selfPosition) &&
-						whiteList.includes(this.state[i][pos])
+						!whiteList.includes(this.state[i][pos])
 					) {
 						this.state[i][posPlus2] = this.attackZone;
 					}
@@ -289,7 +289,7 @@ export class Figures {
 
 	runAll() {
 		this.queenZone();
-		this.elphZone();
+		this.bishopZone();
 		this.kingZone();
 		this.horseZone();
 	}

@@ -1,6 +1,5 @@
 // LIBRARIES
 import React, { useState } from 'react';
-import uniqid from 'uniqid';
 //UTILS
 import { Figures } from './mate-checker.methods.js';
 
@@ -120,11 +119,11 @@ const MateChecker = () => {
                                     activeFigure={activeFigure}
                                     selectActiveFigure={selectActiveFigure}
                                     figuresPositions={figuresPositions}
-                                    key={uniqid()}
+                                    key={elm}
                                     elm={+elm}
                                 />
                             ) : (
-                                <div key={uniqid()}></div>
+                                <div key={elm}></div>
                             );
                         })}
                     </div>
