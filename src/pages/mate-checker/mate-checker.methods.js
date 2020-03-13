@@ -49,28 +49,12 @@ export class Figures {
         }
     }
 
-    queenZone() {
-        let selfPosition = this.queen;
-        const [rowNum, pos] = this.positions[selfPosition];
-        const numMainDiagonal = rowNum + pos;
-        const numSecDiagonal = rowNum - pos;
-
+    queenZone(selfPosition, rowNum, pos) {
         const whiteList = [selfPosition, this.blackKing];
 
-        //! FOR THE TOP PART OF DESK
-        // FOR - TO TOP-RIGHT SKEW LINE
-        loop: for (let i = rowNum; i >= 0; i--) {
-            for (let k = pos; k < 8; k++) {
-                if (i + k === numMainDiagonal) {
-                    if (this.isNotBlocking(i, k, selfPosition)) {
-                        if (whiteList.includes(this.state[i][k])) continue;
-                        this.state[i][k] = this.attackZone;
-                    } else {
-                        break loop;
-                    }
-                }
-            }
-        }
+        // FOR SKEW LINES
+        this.bishopZone(selfPosition, rowNum, pos);
+
         // FOR - TO TOP STRAIGHT LINE
         loop: for (let i = rowNum; i >= 0; i--) {
             for (let k = pos; k < 8; k++) {
@@ -84,51 +68,11 @@ export class Figures {
                 }
             }
         }
-        // FOR - TO TOP-LEFT SKEW LINE
-        loop: for (let i = rowNum; i >= 0; i--) {
-            for (let k = pos; k >= 0; k--) {
-                if (i - k === numSecDiagonal) {
-                    if (this.isNotBlocking(i, k, selfPosition)) {
-                        if (whiteList.includes(this.state[i][k])) continue;
-                        this.state[i][k] = this.attackZone;
-                    } else {
-                        break loop;
-                    }
-                }
-            }
-        }
 
-        //! FOR THE BOTTOM PART OF rowNum
-        // FOR - TO BOTTOM-RIGHT SKEW LINE
-        loop: for (let i = rowNum; i < 8; i++) {
-            for (let k = pos; k < 8; k++) {
-                if (i - k === numSecDiagonal) {
-                    if (this.isNotBlocking(i, k, selfPosition)) {
-                        if (whiteList.includes(this.state[i][k])) continue;
-                        this.state[i][k] = this.attackZone;
-                    } else {
-                        break loop;
-                    }
-                }
-            }
-        }
         // FOR - TO BOTTOM STRAIGHT LINE
         loop: for (let i = rowNum; i < 8; i++) {
             for (let k = pos; k < 8; k++) {
                 if (k === pos) {
-                    if (this.isNotBlocking(i, k, selfPosition)) {
-                        if (whiteList.includes(this.state[i][k])) continue;
-                        this.state[i][k] = this.attackZone;
-                    } else {
-                        break loop;
-                    }
-                }
-            }
-        }
-        // FOR - TO BOTTOM-LEFT SKEW LINE
-        loop: for (let i = rowNum; i < 8; i++) {
-            for (let k = pos; k >= 0; k--) {
-                if (i + k === numMainDiagonal) {
                     if (this.isNotBlocking(i, k, selfPosition)) {
                         if (whiteList.includes(this.state[i][k])) continue;
                         this.state[i][k] = this.attackZone;
@@ -160,9 +104,7 @@ export class Figures {
         }
     }
 
-    bishopZone() {
-        let selfPosition = this.bishop;
-        const [rowNum, pos] = this.positions[selfPosition];
+    bishopZone(selfPosition, rowNum, pos) {
         const numMainDiagonal = rowNum + pos;
         const numSecDiagonal = rowNum - pos;
         const whiteList = [selfPosition, this.blackKing];
@@ -221,9 +163,7 @@ export class Figures {
         }
     }
 
-    kingZone() {
-        const selfPosition = this.king;
-        const [rowNum, pos] = this.positions[selfPosition];
+    kingZone(selfPosition, rowNum, pos) {
         const whiteList = [selfPosition, this.blackKing];
 
         for (let i = rowNum - 1; i <= rowNum + 1; i++) {
@@ -234,9 +174,7 @@ export class Figures {
         }
     }
 
-    horseZone() {
-        const selfPosition = this.horse;
-        const [rowNum, pos] = this.positions[selfPosition];
+    horseZone(selfPosition, rowNum, pos) {
         const whiteList = [selfPosition, this.blackKing];
         const posMinus1 = pos - 1;
         const posMinus2 = pos - 2;
@@ -286,9 +224,9 @@ export class Figures {
     }
 
     runAll() {
-        this.queenZone();
-        this.bishopZone();
-        this.kingZone();
-        this.horseZone();
+        this.queenZone(this.queen, ...this.positions[this.queen]);
+        this.bishopZone(this.bishop, ...this.positions[this.bishop]);
+        this.kingZone(this.king, ...this.positions[this.king]);
+        this.horseZone(this.horse, ...this.positions[this.horse]);
     }
 }

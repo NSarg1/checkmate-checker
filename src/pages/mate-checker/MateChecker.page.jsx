@@ -16,7 +16,7 @@ const MateChecker = () => {
      *king = 50;*/
 
     const initialState = Array(8).fill(Array(8).fill(0));
-    const initialPositions = { 10: undefined, 20: undefined, 30: undefined, 40: undefined, 50: undefined };
+    const initialPositions = { 10: null, 20: null, 30: null, 40: null, 50: null };
     const initialProtected = { 10: false, 20: false, 30: false, 40: false, 50: false };
 
     const [state, setState] = useState(initialState);
@@ -118,7 +118,7 @@ const MateChecker = () => {
                                 Submit
                             </Button>
                         </div>
-                        
+
                         <div className="mate-checker__figures">
                             {Object.keys(figuresPositions).map(elm => {
                                 return !figuresPositions[elm] ? (
