@@ -11,6 +11,11 @@
         height: 35rem;
         width: 70rem;
         opacity: 0;
+
+        @include respond(600) {
+            height: 30rem;
+            width: 60rem;
+        }
     }
 
     &__part-1 {
@@ -31,6 +36,10 @@
         position: absolute;
         top: 2.8rem;
         left: 2.8rem;
+        @include respond(600) {
+            top: 2.2rem;
+            left: 2.2rem;
+        }
     }
 
     &__row {
@@ -45,6 +54,11 @@
         width: 7.85rem;
         border-radius: 15%;
         margin: 0.1rem;
+
+        @include respond(600) {
+            height: 6.7rem;
+            width: 6.7rem;
+        }
 
         &-figure {
             @include absoluteCenter;

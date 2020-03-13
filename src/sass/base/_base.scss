@@ -12,15 +12,15 @@
 html {
 	font-size: 62.5%;
 
-	// @include respond(1200) {
-	// 	font-size: 52%;
-	// }
-	// @include respond(900) {
-	// 	font-size: 45%;
-	// }
-	// @include respond(600) {
-	// 	font-size: 38%;
-	// }
+	@include respond(1200) {
+		font-size: 52%;
+	}
+	@include respond(900) {
+		font-size: 45%;
+	}
+	@include respond(600) {
+		font-size: 33%;
+	}
 }
 
 body {
