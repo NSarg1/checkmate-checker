@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/checkmate-checker/static/css/main.1d3064d1.chunk.css",
-    "main.js": "/checkmate-checker/static/js/main.0223ba33.chunk.js",
-    "main.js.map": "/checkmate-checker/static/js/main.0223ba33.chunk.js.map",
+    "main.js": "/checkmate-checker/static/js/main.0e9d4019.chunk.js",
+    "main.js.map": "/checkmate-checker/static/js/main.0e9d4019.chunk.js.map",
     "runtime-main.js": "/checkmate-checker/static/js/runtime-main.4bc3de55.js",
     "runtime-main.js.map": "/checkmate-checker/static/js/runtime-main.4bc3de55.js.map",
     "static/js/2.aa3b83fe.chunk.js": "/checkmate-checker/static/js/2.aa3b83fe.chunk.js",
     "static/js/2.aa3b83fe.chunk.js.map": "/checkmate-checker/static/js/2.aa3b83fe.chunk.js.map",
     "index.html": "/checkmate-checker/index.html",
-    "precache-manifest.384a320e7256574012f8fb166d648c0d.js": "/checkmate-checker/precache-manifest.384a320e7256574012f8fb166d648c0d.js",
+    "precache-manifest.650a0b9358e50aef18d127c87560af37.js": "/checkmate-checker/precache-manifest.650a0b9358e50aef18d127c87560af37.js",
     "service-worker.js": "/checkmate-checker/service-worker.js",
     "static/css/main.1d3064d1.chunk.css.map": "/checkmate-checker/static/css/main.1d3064d1.chunk.css.map",
     "static/js/2.aa3b83fe.chunk.js.LICENSE.txt": "/checkmate-checker/static/js/2.aa3b83fe.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.4bc3de55.js",
     "static/js/2.aa3b83fe.chunk.js",
     "static/css/main.1d3064d1.chunk.css",
-    "static/js/main.0223ba33.chunk.js"
+    "static/js/main.0e9d4019.chunk.js"
   ]
 }
