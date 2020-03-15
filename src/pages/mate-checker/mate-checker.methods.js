@@ -21,11 +21,16 @@ export class Figures {
         for (let i = blackKingRow - 1; i <= blackKingRow + 1; i++) {
             if (!_board[i]) continue;
             for (let k = blackKingInd - 1; k <= blackKingInd + 1; k++) {
-                if (!_board[i][k] && _board[i][k] !== 0) continue;
-                valArr.push(_board[i][k]);
+                if ((!_board[i][k] && _board[i][k] !== 0) || _board[i][k] === this.blackKing) continue;
+                if (_board[i][k] > 1 && this.isProtected[_board[i][k]] === false) {
+                    valArr.push(false);
+                } else {
+                    valArr.push(_board[i][k]);
+                }
             }
         }
-        if (valArr.includes(0)) {
+        console.log(valArr);
+        if (valArr.includes(0) || valArr.includes(false)) {
             return "This isn't mate";
         } else if (!valArr.includes(0) && isUnderAttack === false) {
             return 'This is stalemate. Nobody wins';

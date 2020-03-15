@@ -6,6 +6,12 @@
     transition: 0.2s linear;
 }
 
+@media only screen and (max-width: 600px) {
+    .chess-figure {
+        cursor: default;
+    }
+}
+
 .chess-figure--10 {
     background-image: url(../../assets/figures/king-white.png);
 }

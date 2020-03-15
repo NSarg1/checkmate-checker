@@ -34,7 +34,10 @@
 
     &__btn {
         flex: 0 0 20%;
-        margin: 3rem 0;
+
+        @include respond(600) {
+            margin: 3rem 0;
+        }
     }
 
     &__figures {
@@ -52,7 +55,7 @@
             display: flex;
             width: 100%;
             justify-content: space-evenly;
-            
+            cursor: default;
         }
     }
 }

@@ -58,6 +58,7 @@
         @include respond(600) {
             height: 6.7rem;
             width: 6.7rem;
+            cursor: default;
         }
 
         &-figure {

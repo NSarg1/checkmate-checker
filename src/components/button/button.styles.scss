@@ -10,6 +10,10 @@
         border-radius: 5px;
         cursor: pointer;
         transition: 0.2s;
+        @include respond(600) {
+          
+            cursor: default;
+        }
     }
 
     &--black {
