@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/checkmate-checker/static/css/main.1d3064d1.chunk.css",
+    "main.css": "/checkmate-checker/static/css/main.260eea96.chunk.css",
     "main.js": "/checkmate-checker/static/js/main.0e9d4019.chunk.js",
     "main.js.map": "/checkmate-checker/static/js/main.0e9d4019.chunk.js.map",
     "runtime-main.js": "/checkmate-checker/static/js/runtime-main.4bc3de55.js",
@@ -8,16 +8,16 @@
     "static/js/2.aa3b83fe.chunk.js": "/checkmate-checker/static/js/2.aa3b83fe.chunk.js",
     "static/js/2.aa3b83fe.chunk.js.map": "/checkmate-checker/static/js/2.aa3b83fe.chunk.js.map",
     "index.html": "/checkmate-checker/index.html",
-    "precache-manifest.650a0b9358e50aef18d127c87560af37.js": "/checkmate-checker/precache-manifest.650a0b9358e50aef18d127c87560af37.js",
+    "precache-manifest.0dff11272fa375921c13d4e69b4f9ea9.js": "/checkmate-checker/precache-manifest.0dff11272fa375921c13d4e69b4f9ea9.js",
     "service-worker.js": "/checkmate-checker/service-worker.js",
-    "static/css/main.1d3064d1.chunk.css.map": "/checkmate-checker/static/css/main.1d3064d1.chunk.css.map",
+    "static/css/main.260eea96.chunk.css.map": "/checkmate-checker/static/css/main.260eea96.chunk.css.map",
     "static/js/2.aa3b83fe.chunk.js.LICENSE.txt": "/checkmate-checker/static/js/2.aa3b83fe.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/checkmate-checker/static/media/queen.90314d48.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4bc3de55.js",
     "static/js/2.aa3b83fe.chunk.js",
-    "static/css/main.1d3064d1.chunk.css",
+    "static/css/main.260eea96.chunk.css",
     "static/js/main.0e9d4019.chunk.js"
   ]
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21600171e1a14272c0f7cd05a87d7112",
+    "revision": "b1fc7ea5bb5d6ce709dd0432e9b01c3f",
     "url": "/checkmate-checker/index.html"
   },
   {
-    "revision": "cd025defcdcb49399212",
-    "url": "/checkmate-checker/static/css/main.1d3064d1.chunk.css"
+    "revision": "95899cb8519e8034d098",
+    "url": "/checkmate-checker/static/css/main.260eea96.chunk.css"
   },
   {
     "revision": "23a3c74370f12ee11193",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/checkmate-checker/static/js/2.aa3b83fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd025defcdcb49399212",
+    "revision": "95899cb8519e8034d098",
     "url": "/checkmate-checker/static/js/main.0e9d4019.chunk.js"
   },
   {
@@ -44,12 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/checkmate-checker/static/media/king-white.35d03b8c.png"
   },
   {
-    "revision": "b92b4b5eae7a5c8b6bafc2c1b419196c",
-    "url": "/checkmate-checker/static/media/part-1.b92b4b5e.png"
+    "revision": "1e02e9c0323c8787b4ab9c12df6db098",
+    "url": "/checkmate-checker/static/media/part-1.1e02e9c0.png"
   },
   {
-    "revision": "8bec0d5173ec98f5952b187fa3252705",
-    "url": "/checkmate-checker/static/media/part-2.8bec0d51.png"
+    "revision": "b3f10a7a8960cac062e9692a0fc50d83",
+    "url": "/checkmate-checker/static/media/part-2.b3f10a7a.png"
   },
   {
     "revision": "90314d4801d0fcd90ab5590f72b3febc",
